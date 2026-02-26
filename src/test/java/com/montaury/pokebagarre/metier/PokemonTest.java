@@ -1,3 +1,13 @@
+/* Cette classe PokemonTest contiendra les tests sur la méthode estVainqueurContre située dans le fichier
+   Pokemon.java, il y aura des tests JUnit pour tout les résultats possibles de cette méthode.
+   Les tests seront les suivants :
+   - Cas d'un Pokemon qui gagne avec une attaque supérieure à son adversaire
+   - Cas d'un Pokemon qui perd avec une attaque inférieure à son adversaire
+   - Cas où les deux Pokemons ont la même stat d'attaque mais un des deux gagne car il a une défense supérieure à l'autre
+   - Cas où les deux Pokemons ont la même stat d'attaque mais un des deux perd car il a une défense inférieure à l'autre
+   - Cas où les deux stats des Pokemons sont les mêmes mais le premier Pokemon saisi gagne en priorité
+*/
+
 package com.montaury.pokebagarre.metier;
 
 import org.junit.jupiter.api.Test;
@@ -5,6 +15,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PokemonTest {
+
 
     @Test
     void estVainqueurContre_gagne_si_attaque_superieure() {
